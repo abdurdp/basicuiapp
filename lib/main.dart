@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.grey.shade200,
         bottomNavigationBar: menu(),
         body:TabBarView(
           children: [
@@ -119,6 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
  Widget HomeWidget() {
 
     return  Container(
+      padding: EdgeInsets.all(16),
       child: Column(
         // Column is also a layout widget. It takes a list of children and
         // arranges them vertically. By default, it sizes itself to fit its
